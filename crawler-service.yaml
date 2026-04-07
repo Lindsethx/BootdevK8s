@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: crawler-service
 spec:
-  type: ClusterIP
   selector:
     app: synergychat-crawler
   ports:
     - protocol: TCP
-      port: 80              #port that service will listen on
-      targetPort: 8080      #port that pods are listening on
+      port: 80
+      targetPort: 8080
